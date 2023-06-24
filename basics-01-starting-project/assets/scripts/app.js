@@ -1,5 +1,8 @@
-let currentResult = 0;
+const defaultResult = 0;
+let currentResult = defaultResult;
 
 currentResult = currentResult + 10;
 
-outputResult(currentResult, '');
+let calculationDescription = '(' + currentResult + ' + 10) * 2'
+
+outputResult(currentResult, calculationDescription);
