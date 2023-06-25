@@ -3,13 +3,10 @@ let currentResult = defaultResult;
 
 function add(num1, num2) {
   const result = num1 + num2;
-  alert(`The result is: ${result} `);
+  return result;
 }
 
-add(1, 2);
-add(5, 9);
-
-currentResult = currentResult + 10;
+currentResult = add(1, 3);
 
 let calculationDescription = `(  ${currentResult} + 10) * 2`;
 let errorMessage = "An error occurred!";
