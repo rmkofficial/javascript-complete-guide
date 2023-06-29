@@ -1,14 +1,9 @@
 const defaultResult = 0;
 let currentResult = defaultResult;
 
-function add(num1, num2) {
-  const result = num1 + num2;
-  return result;
+function add() {
+  currentResult = currentResult + userInput.value;
+  outputResult(currentResult, "");
 }
 
-currentResult = add(1, 3);
-
-let calculationDescription = `(  ${currentResult} + 10) * 2`;
-let errorMessage = "An error occurred!";
-
-outputResult(currentResult, calculationDescription);
+addBtn.addEventListener("click", add);
