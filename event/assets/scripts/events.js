@@ -1,11 +1,12 @@
 const button = document.querySelector("button");
 
-const buttonClickHandler = () => {
-  alert("Button was clicked!");
+const buttonClickHandler = (event) => {
+  event.target.disabled = true;
+  console.log(event);
 };
 
 button.addEventListener("click", buttonClickHandler);
 
-setTimeout(() => {
-  button.removeEventListener("click", buttonClickHandler);
-}, 2000);
+// setTimeout(() => {
+//   button.removeEventListener("click", buttonClickHandler);
+// }, 2000);
