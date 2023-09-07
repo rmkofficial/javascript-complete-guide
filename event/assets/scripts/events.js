@@ -5,7 +5,8 @@ const buttonClickHandler = (event) => {
   console.log(event);
 };
 
-button.addEventListener("click", buttonClickHandler);
+// button.addEventListener("click", buttonClickHandler);
+button.addEventListener("mouseenter", buttonClickHandler);
 
 // setTimeout(() => {
 //   button.removeEventListener("click", buttonClickHandler);

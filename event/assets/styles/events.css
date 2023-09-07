@@ -35,3 +35,10 @@ button:active {
   border-color: #e92f6d;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.26);
 }
+
+button:disabled{
+  background: #ccc;
+  border-color: #ccc;
+  cursor: not-allowed;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.26);
+}
