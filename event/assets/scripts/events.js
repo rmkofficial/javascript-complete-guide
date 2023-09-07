@@ -1,4 +1,5 @@
 const button = document.querySelector("button");
+const form = document.querySelector("form");
 
 const buttonClickHandler = (event) => {
   event.target.disabled = true;
@@ -7,6 +8,13 @@ const buttonClickHandler = (event) => {
 
 // button.addEventListener("click", buttonClickHandler);
 button.addEventListener("mouseenter", buttonClickHandler);
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const formInputs = event.target.querySelectorAll("input");
+  formInputs.forEach((input) => {
+    console.log(input.value);
+  });
+});
 
 // setTimeout(() => {
 //   button.removeEventListener("click", buttonClickHandler);
