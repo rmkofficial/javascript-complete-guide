@@ -42,3 +42,19 @@ button:disabled{
   cursor: not-allowed;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.26);
 }
+
+li {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background: #ccc;
+  border-radius: 10px;
+  border: solid 1px #ccc;
+  list-style: none;
+  cursor: pointer;
+}
+
+.highlight {
+  background: #ff0055;
+  border-color: #ff0055;
+  color: white;
+}

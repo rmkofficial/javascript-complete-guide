@@ -1,6 +1,8 @@
 const button = document.querySelector("button");
 const form = document.querySelector("form");
 const div = document.querySelector("div");
+const listItems = document.querySelectorAll("li");
+const list = document.querySelector("ul");
 
 // const buttonClickHandler = (event) => {
 //   event.target.disabled = true;
@@ -30,4 +32,14 @@ button.addEventListener("click", (event) => {
   event.stopPropagation();
   console.log("CLICKED BUTTON");
   console.log(event);
+});
+
+// listItems.forEach((listItem) => {
+//   listItem.addEventListener("click", (event) => {
+//     event.target.classList.toggle("highlight");
+//   });
+// });
+
+list.addEventListener("click", (event) => {
+  event.target.closest("li").classList.toggle("highlight");
 });
