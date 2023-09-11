@@ -42,4 +42,6 @@ button.addEventListener("click", (event) => {
 
 list.addEventListener("click", (event) => {
   event.target.closest("li").classList.toggle("highlight");
+  // form.submit();
+  button.click();
 });
