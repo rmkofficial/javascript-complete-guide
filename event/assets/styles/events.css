@@ -36,25 +36,20 @@ button:active {
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.26);
 }
 
-button:disabled{
-  background: #ccc;
-  border-color: #ccc;
-  cursor: not-allowed;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.26);
+#long-one {
+  height: 3000px;
 }
 
 li {
-  margin: 0.5rem 0;
-  padding: 0.5rem;
-  background: #ccc;
-  border-radius: 10px;
-  border: solid 1px #ccc;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+ul {
   list-style: none;
-  cursor: pointer;
 }
 
 .highlight {
-  background: #ff0055;
-  border-color: #ff0055;
+  background-color: red;
   color: white;
 }
