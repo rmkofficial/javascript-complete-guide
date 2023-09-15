@@ -31,3 +31,16 @@ const calculateIncomeTaxAmount = createTaxCalculator(0.25);
 
 console.log(calculateVatAmount(100));
 console.log(calculateIncomeTaxAmount(200));
+
+//
+
+let userName = "Max";
+
+function greetUser() {
+  // let name = userName;
+  console.log("Hi " + name);
+}
+
+let name = "Anna";
+
+greetUser();
